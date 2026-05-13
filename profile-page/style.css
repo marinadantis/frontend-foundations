@@ -1,1 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+}
 
+h1 {
+  font-size: 30px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-image {
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  padding: 25px 0;
+}
+
+.btn-link {
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: black;
+  border-radius: 8px;
+  color: white;
+  display: inline-block;
+}
+
+.btn-link:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.required {
+  color: red;
+}
+
+.project-card {
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.project-image {
+  border: 0;
+  border-radius: inherit;
+  width: inherit;
+  max-width: 100%;
+  border-bottom: 3px solid #ccc;
+}
+
+.project-content {
+  padding: 10px;
+}
+
+.project-title {
+  margin: 0;
+}
+
+.project-excerpt {
+  margin: 10px 0;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+#skills span {
+  padding: 5px 15px;
+  margin: 4px;
+  background-color: #ccc;
+  border-radius: 8px;
+}
+
+.separator {
+  margin: 40px 0;
+  border: 3px solid;
+}

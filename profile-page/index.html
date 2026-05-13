@@ -13,7 +13,7 @@
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class="nav-list">
           <li>
             <strong><a href="#home">[MD]</a></strong>
           </li>
@@ -25,88 +25,102 @@
         </ul>
       </nav>
     </header>
-    <main>
+
+    <main class="container">
       <section id="home">
         <img
           src="assets/images/profile.jpg"
           alt="Portrait of Marina Dantis"
-          style="
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: top;
-          "
+          class="profile-image"
         />
 
-        <h1>Marina Dantis</h1>
-        <p>Product Engineer | Frontend Developer</p>
+        <h1>Hi, I’m Marina — Web Developer & Product Engineer</h1>
+
         <p>
-          Frontend Developer focused on clean UI and real-world applications.
+          Transforming ideas into elegant and functional digital experiences.
         </p>
-        <a href="assets/pdfs/CV.pdf" download="Marina-Dantis-CV.pdf"
+
+        <a
+          href="assets/pdfs/CV.pdf"
+          download="Marina-Dantis-CV.pdf"
+          id="download-cv-link"
+          class="btn-link"
           >Download CV</a
         >
-        <a href="#contact">Contact Me</a>
       </section>
 
+      <hr class="separator">
       <section id="about-me">
         <h2>About Me</h2>
         <p>
-          I am a Frontend Developer with experience in building UI using Vue.js
-          and a strong background in QA and product engineering.
+          I'm Marina, a web developer specializing in HTML, CSS, JavaScript, and
+          modern frameworks like Vue.js and TailwindCSS.
         </p>
         <p>
-          Currently, I am revisiting and strengthening my core fundamentals in
-          HTML, CSS, and JavaScript, with a focus on building complete
-          applications from scratch and improving my end-to-end development
-          skills.
+          I work at the intersection of product and engineering — simplifying
+          workflows, improving efficiency, and delivering features from ideation
+          to production.
         </p>
         <p>
-          My goal is to become proficient in modern frontend development using
-          Vue and React, with a strong emphasis on clean UI, scalable
-          components, and production-ready applications.
+          Whether it's system design, implementation, or iterating on user
+          feedback, I own the full journey and obsess over building solutions
+          that just work.
         </p>
+        <a
+          href="#contact"
+          id="contact-me-link"
+          class="btn-link"
+          >Contact me</a
+        >
       </section>
 
+      <hr class="separator">
       <section id="skills">
         <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>Vue</li>
-          <li>Product</li>
-          <li>QA</li>
-        </ul>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>Vue</span>
+        <span>Product</span>
+        <span>QA</span>
       </section>
 
+      <hr class="separator">
       <section id="projects">
         <h2>Projects</h2>
+        <p>
+          A selection of personal and learning-focused projects where I explored
+          frontend development, state management and basic backend concepts.
+        </p>
 
-        <article>
-          <h3>Hellochef Signature Builder</h3>
+        <article class="project-card">
           <img
-            width="500"
-            border="1px"
             src="./assets/images/signature-builder.png"
             alt="A lightweight web app to generate clean, consistent email signatures
             for Hello Chef employees"
+            class="project-image"
           />
-          <p>
-            A lightweight web app to generate clean, consistent email signatures
-            for Hello Chef employees.
-          </p>
-          <a
-            href="https://hellochef-signature-builder.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View project</a
-          >
+          <div class="project-content">
+            <p class="project-title">
+              <strong>Hellochef Signature Builder</strong>
+            </p>
+            <p class="project-excerpt">
+              A lightweight web app to generate clean, consistent email
+              signatures for Hello Chef employees.
+            </p>
+            <a
+              href="https://hellochef-signature-builder.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+              >View project
+            </a>
+          </div>
         </article>
       </section>
 
+      <hr class="separator">
       <section id="contact">
         <h2>Get in Touch</h2>
 
@@ -115,39 +129,47 @@
           I'm here to assist you!
         </p>
         <form action="">
+          <label for="name">Name <span class="required">*</span></label>
           <input
             required
             name="name"
             id="name"
             type="text"
-            placeholder="Enter your name"
+            placeholder="Your name"
           />
 
+          <br />
+          <label for="email">Email <span class="required">*</span></label>
           <input
             required
             name="email"
             id="email"
             type="email"
-            placeholder="Enter your email"
+            placeholder="example@email.com"
           />
 
+          <br />
+          <label for="message">Message <span class="required">*</span></label>
           <textarea
             required
             name="message"
             id="message"
-            placeholder="Enter your message"
+            placeholder="Tell me about your project, work or just say hi!"
             rows="3"
           ></textarea>
 
+          <br />
           <button type="submit">Send message</button>
         </form>
       </section>
     </main>
+
     <hr />
     <footer>
       <p>&#169; 2026 Marina Dantis</p>
 
-      <a href="mailto:marina.dantis@gmail.com" 
+      <a
+        href="mailto:marina.dantis@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
         ><img

@@ -1,0 +1,138 @@
+body {
+  background-image: url(./assets/images/background.jpg);
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.profile-card {
+  background-color: white;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px gray;
+  margin: 150px auto 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-picture {
+  position: absolute;
+  top: -130px;
+  left: 100px;
+  width: 300px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.name {
+  margin-top: 180px;
+  margin-bottom: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.position {
+  text-align: center;
+}
+
+.position p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  background-color: #f3f6f6;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+.profile-details a {
+  text-decoration: none;
+  color: black;
+}
+
+.profile-details ul {
+  list-style-type: none;
+  background-color: #f3f6f6;
+  padding: 0 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.profile-details ul li {
+  padding: 20px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+ul.divide-y li + li {
+  border-top: 1px solid #e5e7eb;
+}
+
+.profile-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.row-label {
+  font-size: small;
+}
+
+.row-data {
+  font-size: medium;
+  font-weight: 550;
+}
+
+.download-cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-link {
+  text-decoration: none;
+  padding: 15px 30px;
+  background: linear-gradient(to left, #87cefa, #d7edfa, #87cefa);
+  background-size: 200% auto;
+  transition: 0.5s;
+  border: none;
+  border-radius: 30px;
+  color: black;
+  cursor: pointer;
+  margin: 10px auto 20px;
+}
+
+.btn-link:hover {
+  background-position: right center;
+}
+
+.btn-link:focus {
+  outline: 3px solid #87cefa;
+  outline-offset: 2px;
+}
+
+.material-symbols-outlined {
+  vertical-align: bottom;
+}
+
+@media (min-width: 768px) {
+  .profile-card {
+    width: 20%;
+    min-width: 460px;
+      margin: 150px 0 20px;
+  }
+}
