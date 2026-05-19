@@ -166,7 +166,8 @@ section p + p {
   margin: 14px 0;
 }
 
-.about-articles {
+.about-articles,
+.experience-articles {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -187,8 +188,64 @@ section p + p {
   gap: 4px;
 }
 
-h2 {
+.experience-article {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f6f6;
+  padding: 24px 10px;
+  border-radius: 14px;
+  border-left: 4px solid #87cefa;
+}
+
+.experience-article > div,
+.education-article > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.experience-timeline {
+  color: #51b7f6;
+  font-weight: 600;
+}
+
+.experience-position,
+.education-title {
+  color: #45566c;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.education-article {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f3f6;
+  padding: 24px 10px;
+  border-radius: 14px;
+  border-left: 4px solid #918cf3;
+}
+
+.education-timeline {
+  color: #756ef0;
+  font-weight: 600;
+}
+
+.section-sub-heading {
   font-weight: 500;
+}
+
+#resume h2 {
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+#resume section span {
+  display: inline-block;
+  background-color: #f3f6f6;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 8px 10px 8px 0;
 }
 
 .project-card {
@@ -252,9 +309,9 @@ form .btn-submit {
   font-size: medium;
 }
 
-  .nav-bar {
-    display: none;
-  }
+.nav-bar {
+  display: none;
+}
 
 /* Desktop */
 @media (min-width: 768px) {
@@ -358,9 +415,9 @@ form .btn-submit {
   }
 
   .project-card {
-  width: 50%;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin: 20px 0;
-}
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
 }
