@@ -2,7 +2,9 @@ const navLinks = document.querySelectorAll(".nav-list a");
 const sections = document.querySelectorAll(".section-content");
 
 navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
     // remove active from all
     navLinks.forEach((item) => {
       item.classList.remove("active");
@@ -20,4 +22,30 @@ navLinks.forEach((link) => {
     const selectedSection = document.getElementById(link.dataset.section);
     selectedSection.classList.remove("hidden");
   });
+});
+
+// Contact us form submission
+emailjs.init("ES3b-8p9MU4tg-mBT");
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const btn = document.querySelector(".btn-submit");
+
+  btn.textContent = "Sending...";
+
+  try {
+    await emailjs.sendForm("service_d0ckd7c", "template_bksl7o8", form);
+
+    alert("Message sent successfully!");
+
+    form.reset();
+  } catch (error) {
+    alert("Failed to send message.");
+    console.error(error);
+  }
+
+  btn.textContent = "Submit";
 });

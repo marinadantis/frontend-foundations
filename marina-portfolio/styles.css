@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url(./assets/images/background.jpg);
   font-family: Poppins, sans-serif;
@@ -77,7 +81,6 @@ body {
 
 .profile-details a {
   text-decoration: none;
-  color: black;
 }
 
 .profile-details ul {
@@ -112,6 +115,7 @@ ul.divide-y li + li {
 .row-data {
   font-size: medium;
   font-weight: 550;
+  color: #45566c;
 }
 
 .download-cv {
@@ -128,9 +132,10 @@ ul.divide-y li + li {
   transition: 0.5s;
   border: none;
   border-radius: 30px;
-  color: black;
+  color: #45566c;
   cursor: pointer;
   margin: 10px auto 20px;
+  font-weight: 600;
 }
 
 .btn-link:hover {
@@ -246,6 +251,8 @@ section p + p {
   border-radius: 30px;
   padding: 10px 20px;
   margin: 8px 10px 8px 0;
+  border: 1px solid #87cefa;
+  color: #45566c;
 }
 
 .project-card {
@@ -303,10 +310,20 @@ form .btn-submit {
   transition: 0.5s;
   border: none;
   border-radius: 10px;
-  color: black;
+  color: #45566c;
   cursor: pointer;
   margin: 30px auto 20px;
   font-size: medium;
+  font-weight: 600;
+}
+
+form .btn-submit:hover {
+  background-position: right center;
+}
+
+form .btn-submit:focus {
+  outline: 3px solid #87cefa;
+  outline-offset: 2px;
 }
 
 .nav-bar {
@@ -319,14 +336,15 @@ form .btn-submit {
     display: flex;
     flex-direction: row;
     gap: 2px;
+    max-width: 1500px;
+    margin: 0 auto;
   }
 
   .hero-section {
-    width: 20%;
-    min-width: 460px;
+    flex: 0 0 420px; /* fixed column */
+    height: 100%;
     padding-top: 170px;
-    margin-left: 150px;
-    margin-right: 30px;
+    margin-left: 30px;
   }
 
   .profile-picture {
@@ -335,12 +353,11 @@ form .btn-submit {
   }
 
   .details-section {
-    width: 80%;
-    min-width: 860px;
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 100px 150px 20px 20px;
+    margin: 100px 30px 20px;
   }
 
   .nav-bar {
@@ -366,6 +383,7 @@ form .btn-submit {
     font-weight: bold;
     font-size: medium;
     color: #45566c;
+    min-width: 100px;
     background-color: #f3f6f6;
     border: none;
     border-radius: 10px;

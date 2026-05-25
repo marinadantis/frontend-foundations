@@ -586,7 +586,10 @@
                     </h3>
                   </div>
                   <p>Morgan Stanley, Mumbai</p>
-                  <p>QA Engineering • Automation • Cypress</p>
+                  <p>
+                    QA Engineering • Test Strategy • Automation • Cypress • BDD
+                    (Cucumber) • Shift Left Testing
+                  </p>
                 </div>
 
                 <div class="experience-article">
@@ -597,7 +600,10 @@
                     </h3>
                   </div>
                   <p>Persistent Systems, Pune</p>
-                  <p>Manual Testing • Defect Tracking • • Agile • Scrum</p>
+                  <p>
+                    Manual Testing • Defect Tracking • Agile • Scrum • Shell
+                    Scripting
+                  </p>
                 </div>
               </article>
             </section>
@@ -661,11 +667,11 @@
               work or potential partnerships. Feel free to reach out.
             </p>
 
-            <form action="submit">
+            <form action="#" id="contact-form">
               <label for="name">Name <span class="required">*</span></label>
               <input
                 required
-                name="name"
+                name="from_name"
                 id="name"
                 type="text"
                 placeholder="Your name"
@@ -674,7 +680,7 @@
               <label for="email">Email <span class="required">*</span></label>
               <input
                 required
-                name="email"
+                name="from_email"
                 id="email"
                 type="email"
                 placeholder="example@email.com"
@@ -699,6 +705,11 @@
     </div>
 
     <!-- Link to your external JavaScript file -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
     <script src="main.js"></script>
   </body>
 </html>
