@@ -255,7 +255,36 @@ section p + p {
   color: #45566c;
 }
 
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
 .project-card {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-skills span {
+  background-color: #e0e2e2;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: small;
+}
+
+/* .project-card {
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -268,7 +297,7 @@ section p + p {
   width: 100%;
   max-width: 100%;
   border-bottom: 3px solid #ccc;
-}
+} */
 
 .project-content {
   padding: 20px;
@@ -519,14 +548,11 @@ form .btn-submit:focus {
     width: 48%;
   }
 
-  .hidden {
-    display: none;
+  .project-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .project-card {
-    width: 50%;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin: 20px 0;
+  .hidden {
+    display: none;
   }
 }
