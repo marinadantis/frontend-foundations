@@ -316,6 +316,41 @@
             </ul>
           </nav>
         </div>
+        <div class="open-menu">
+          <button class="open-menu-btn" id="open-menu-btn">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://w3.org"
+            >
+              <path
+                d="M4 6H20M4 12H20M4 18H20"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button class="close-menu-btn hidden" id="close-menu-btn">
+            <svg
+              xmlns="http://w3.org"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
         <main>
           <div id="about" class="section-content">
             <h1 class="section-heading">About me</h1>
@@ -409,9 +444,9 @@
                 <div>
                   <h3>State Management & Data Flow</h3>
                   <p>
-                    Manage complex application state using tools like Redux
-                    Toolkit, Zustand, handling async flows, caching, and edge
-                    cases.
+                    Manage application state using Pinia, handling reactive
+                    state, async API flows, caching patterns, and edge cases in
+                    Vue 3 applications.
                   </p>
                 </div>
               </div>
@@ -705,6 +740,8 @@
     </div>
 
     <!-- Link to your external JavaScript file -->
+
+    <!-- https://dashboard.emailjs.com/admin -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"

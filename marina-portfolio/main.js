@@ -1,3 +1,23 @@
+// Mobile navigation link button
+const openMenuBtn = document.getElementById("open-menu-btn");
+const closeMenuBtn = document.getElementById("close-menu-btn");
+const navBar = document.querySelector(".nav-bar");
+
+openMenuBtn.addEventListener("click", () => {
+  navBar.classList.add("show-menu");
+
+  openMenuBtn.classList.add("hidden");
+  closeMenuBtn.classList.remove("hidden");
+});
+
+closeMenuBtn.addEventListener("click", () => {
+  navBar.classList.remove("show-menu");
+
+  closeMenuBtn.classList.add("hidden");
+  openMenuBtn.classList.remove("hidden");
+});
+
+// Navigation bar link selection to display respective detail section
 const navLinks = document.querySelectorAll(".nav-list a");
 const sections = document.querySelectorAll(".section-content");
 
@@ -21,6 +41,13 @@ navLinks.forEach((link) => {
     // show selected section
     const selectedSection = document.getElementById(link.dataset.section);
     selectedSection.classList.remove("hidden");
+
+    // close mobile menu after click
+    if (window.innerWidth < 768) {
+      navBar.classList.remove("show-menu");
+      closeMenuBtn.classList.add("hidden");
+      openMenuBtn.classList.remove("hidden");
+    }
   });
 });
 
