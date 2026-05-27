@@ -245,13 +245,17 @@ section p + p {
   font-weight: 400;
 }
 
-#resume section span {
-  display: inline-block;
-  background-color: #f3f6f6;
-  border-radius: 30px;
-  padding: 10px 20px;
-  margin: 8px 10px 8px 0;
-  border: 1px solid #87cefa;
+.resume-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.resume-skills span {
+  background-color: #e0e2e2;
+  padding: 6px 15px;
+  border-radius: 20px;
   color: #45566c;
 }
 
@@ -282,29 +286,6 @@ section p + p {
   padding: 6px 15px;
   border-radius: 20px;
   font-size: small;
-}
-
-/* .project-card {
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-.project-image {
-  border: 0;
-  border-radius: inherit;
-  width: 100%;
-  max-width: 100%;
-  border-bottom: 3px solid #ccc;
-} */
-
-.project-content {
-  padding: 20px;
-}
-
-.project-excerpt {
-  margin: 10px 0;
 }
 
 .project-link {
