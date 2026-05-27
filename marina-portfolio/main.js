@@ -42,6 +42,12 @@ navLinks.forEach((link) => {
     const selectedSection = document.getElementById(link.dataset.section);
     selectedSection.classList.remove("hidden");
 
+    // scroll to section
+    selectedSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+
     // close mobile menu after click
     if (window.innerWidth < 768) {
       navBar.classList.remove("show-menu");
