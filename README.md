@@ -66,7 +66,7 @@ Skills Practiced
 
 Clone the repository:
 
-bash git clone https://github.com/<your-github-username>/frontend-foundations.git 
+bash git clone https://github.com/your-github-username/frontend-foundations.git 
 
 Navigate to any project folder:
 
