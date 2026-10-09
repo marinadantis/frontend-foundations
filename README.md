@@ -72,8 +72,16 @@ Navigate to any project folder:
 
 bash cd frontend-foundations/marina-portfolio 
 
-Open the index.html file in your browser.
+Open the index.html file in your browser
 
+OR
+
+Navigate to marina-portfolio folder and run the below commands
+cd marina-portfolio
+npx http-server . -p 8080
+
+To run tests locally
+npx cypress open
 ---
 
 ## 🎯 Learning Goals
