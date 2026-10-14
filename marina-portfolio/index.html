@@ -12,14 +12,16 @@
   </head>
   <body>
     <div class="container">
-      <div class="hero-section">
+      <div id="hero" class="hero-section">
         <img
           src="./assets/images/profile-image.jpg"
           alt="Portrait of Marina Dantis"
           class="profile-picture"
         />
-        <h1 data-test="name" class="name">Marina Dantis</h1>
-        <div class="position"><p data-test="position">Frontend Developer</p></div>
+        <h1 data-test="fullname" class="name">Marina Dantis</h1>
+        <div class="position">
+          <p data-test="position">Frontend Developer</p>
+        </div>
 
         <section class="social-links">
           <a
@@ -138,7 +140,7 @@
               </svg>
               <div class="profile-row">
                 <span class="row-label">Location</span>
-                <span class="row-data">Dubai, UAE</span>
+                <span data-test="location-value" class="row-data">Dubai, UAE</span>
               </div>
             </li>
             <li>
@@ -163,7 +165,7 @@
               </svg>
               <div class="profile-row">
                 <span class="row-label">Birthday</span>
-                <span class="row-data">August 18, 1990</span>
+                <span data-test="birthday-value" class="row-data">August 18, 1990</span>
               </div>
             </li>
           </ul>
