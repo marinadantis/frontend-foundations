@@ -5,9 +5,11 @@ A collection of frontend projects built while learning and practicing HTML, CSS,
 ## 📚 Projects Included
 
 ### 1. Business Card
+
 A simple digital business card project created using HTML and CSS.
 
 Skills Practiced
+
 - HTML structure
 - CSS styling
 - Layout fundamentals
@@ -15,46 +17,12 @@ Skills Practiced
 
 ---
 
-### 2. Marina Portfolio 🌟
-A personal portfolio website showcasing my background, skills, projects, and contact information.
+### 2. Profile Page
 
-🔗 Live Demo: https://marina-dantis-portfolio.vercel.app/
-
-#### Features
-- Responsive design for desktop and mobile devices
-- Clean and modern UI
-- About Me section
-- Skills showcase
-- Projects section
-- Contact information
-
-#### Built With
-- HTML5
-- CSS3
-- Responsive Web Design
-
-#### Skills Practiced
-- Semantic HTML
-- Flexbox
-- CSS Grid
-- Responsive layouts
-- UI design principles
-- Deployment with Vercel
-
-#### Screenshots
-
-##### Desktop View
-![Portfolio Desktop](./screenshots/portfolio-desktop.png)
-
-##### Mobile View
-![Portfolio Mobile](./screenshots/portfolio-mobile.png)
-
----
-
-### 3. Profile Page
 A responsive profile page built to practice layout techniques and component styling.
 
 Skills Practiced
+
 - HTML structure
 - CSS styling
 - CSS positioning
@@ -66,22 +34,14 @@ Skills Practiced
 
 Clone the repository:
 
-bash git clone https://github.com/your-github-username/frontend-foundations.git 
+bash git clone https://github.com/your-github-username/frontend-foundations.git
 
 Navigate to any project folder:
 
-bash cd frontend-foundations/marina-portfolio 
+bash cd frontend-foundations/profile-page
 
 Open the index.html file in your browser
 
-OR
-
-Navigate to marina-portfolio folder and run the below commands
-cd marina-portfolio
-npx http-server . -p 8080
-
-To run tests locally
-npx cypress open
 ---
 
 ## 🎯 Learning Goals
@@ -104,4 +64,4 @@ Marina Dantis
 
 Frontend Developer | QA Engineer
 
-Portfolio: https://marina-dantis-portfolio.vercel.app
+Portfolio: https://marina-dantis.vercel.app
